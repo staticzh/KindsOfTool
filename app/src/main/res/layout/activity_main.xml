@@ -8,11 +8,13 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     tools:context="com.zhenghe.kindofdemo.MainActivity">
 
     <Button
-        android:id="@+id/permission"
+        android:id="@+id/activity_permission"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="申请权限"/>
+        android:text="动态申请权限页面"/>
+
 </LinearLayout>

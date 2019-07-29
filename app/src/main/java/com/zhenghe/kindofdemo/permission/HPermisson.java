@@ -32,6 +32,6 @@ public class HPermisson {
         if (permissions == null || permissions.length <= 0) {
             return;
         }
-        PermissionActivity.request(context, permissions, callback);
+        TransparentActivity.request(context, permissions, callback);
     }
 }

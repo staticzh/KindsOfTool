@@ -14,14 +14,14 @@ import java.util.List;
  * Created by zh on 2019/7/23.
  * 用来动态申请权限的透明Activity
  */
-public class PermissionActivity extends Activity{
+public class TransparentActivity extends Activity{
 
     /*
      * 添加一个静态方法方便使用
      */
     public static void request(Context context, String[] permissions, PermissionCallback callback) {
         CALLBACK = callback;
-        Intent intent = new Intent(context, PermissionActivity.class);
+        Intent intent = new Intent(context, TransparentActivity.class);
         intent.putExtra(KEY_PERMISSIONS, permissions);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         context.startActivity(intent);

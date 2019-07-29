@@ -18,9 +18,10 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".permission.PermissionActivity"
-                  android:theme="@style/Translucent"
+        <activity android:name=".permission.TransparentActivity"
+                  android:theme="@style/Transparent"
         />
+        <activity android:name=".activity.PermissionActivity"/>
     </application>
 
 </manifest>
